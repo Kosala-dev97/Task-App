@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/profile_layout"
+    android:padding="16dp">
+
+    <!-- Sign Out Button -->
+    <Button
+        android:id="@+id/signOutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Out"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Task Input Field -->
+    <EditText
+        android:id="@+id/taskInputField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a new task"
+        android:layout_below="@id/signOutButton"
+        android:layout_marginTop="16dp" />
+
+    <!-- Add Task Button -->
+    <Button
+        android:id="@+id/addTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Task"
+        android:layout_below="@id/taskInputField"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp" />
+
+    <!-- Container for Task Items -->
+    <LinearLayout
+        android:id="@+id/taskContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addTaskButton"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical" />
+
+</RelativeLayout>
